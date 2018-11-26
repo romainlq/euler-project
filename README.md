@@ -3,7 +3,7 @@
 ## List of challenges
 
 - [x] 001 - Multiples of 3 and 5
-- [ ] 002 - Even Fibonacci numbers
+- [x] 002 - Even Fibonacci numbers
 - [ ] 003 - Largest prime factor
 - [ ] 004 - Largest palindrome product
 - [ ] 005 - Smallest multiple
