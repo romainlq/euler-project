@@ -8,7 +8,7 @@ const isPal = (valueToTest) => {
 let biggestPal=0;
 let actualValue
 for(let i = 999; i>=100; i--) {
-    for (let j = 998; j >= 100; j--) {
+    for (let j = 999; j >= 100; j--) {
         actualValue = i * j
         if (isPal(actualValue.toString()) && (biggestPal < actualValue)) {
             biggestPal = actualValue
