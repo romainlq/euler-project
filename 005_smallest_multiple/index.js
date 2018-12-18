@@ -1,18 +1,12 @@
-let start = new Date().getTime();
+const utils = require('../utils');
 
-const generateArray = (n) => {
-    var arr = [];
-    for (let i=1; i <= n; i++) {
-        arr.push(i);
-    }
-    return arr;
-}
+let start = new Date().getTime();
 
 const isEvenlyDivisibleByAllValues = (valToTest, values) => {
     return values.every(element => valToTest % element === 0 );
 }
 
-let values = generateArray(20);
+let values = utils.generateArray(20);
 
 let valToTest = 20;
 let foundIt = false;
