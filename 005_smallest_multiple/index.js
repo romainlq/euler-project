@@ -1,4 +1,29 @@
-// 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
+let start = new Date().getTime();
 
-// What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
-console.log('hello');
+const generateArray = (n) => {
+    var arr = [];
+    for (let i=1; i <= n; i++) {
+        arr.push(i);
+    }
+    return arr;
+}
+
+const isEvenlyDivisibleByAllValues = (valToTest, values) => {
+    return values.every(element => valToTest % element === 0 );
+}
+
+let values = generateArray(20);
+
+let valToTest = 20;
+let foundIt = false;
+
+while (!foundIt) {
+    if (isEvenlyDivisibleByAllValues(valToTest, values)) {
+        console.log('FOUND IT : ' + valToTest)
+        foundIt = true;
+    }
+    valToTest += 20;
+}
+
+let end = new Date().getTime();
+console.log("Time : " + (end - start) + " ms");
